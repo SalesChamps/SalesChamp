@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#c9e6ff", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#5516be", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "on-secondary": "#ffffff", "on-surface": "#131b2e", "tertiary": "#571ac0", "on-secondary-fixed-variant": "#004c6e", "outline": "#777587", "inverse-primary": "#c3c0ff", "surface-container": "#eaedff", "surface-container-high": "#e2e7ff", "tertiary-fixed": "#e9ddff", "on-surface-variant": "#464555", "background": "#faf8ff", "on-tertiary-fixed": "#23005c", "secondary": "#006591", "on-background": "#131b2e", "on-secondary-fixed": "#001e2f", "primary-container": "#4f46e5", "on-primary-container": "#dad7ff", "surface-container-highest": "#dae2fd", "inverse-on-surface": "#eef0ff", "error": "#ba1a1a", "secondary-fixed-dim": "#89ceff", "on-error": "#ffffff", "outline-variant": "#c7c4d8", "on-tertiary-container": "#e3d5ff", "primary-fixed": "#e2dfff", "tertiary-fixed-dim": "#d0bcff", "surface-container-low": "#f2f3ff", "secondary-container": "#39b8fd", "primary-fixed-dim": "#c3c0ff", "on-primary-fixed": "#0f0069", "on-tertiary": "#ffffff", "on-secondary-container": "#004666", "surface-tint": "#4d44e3", "primary": "#3525cd", "surface-variant": "#dae2fd", "surface-bright": "#faf8ff", "on-primary": "#ffffff", "surface": "#faf8ff", "tertiary-container": "#6f3dd9", "on-primary-fixed-variant": "#3323cc", "error-container": "#ffdad6", "on-error-container": "#93000a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xs": "0.125rem", "space-2xl": "2rem", "margin-mobile": "1rem", "space-md": "0.75rem", "space-sm": "0.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "nav-rail-width": "4.5rem", "space-base": "1rem", "space-xl": "1.5rem", "space-4xl": "3rem", "space-3xl": "2.5rem", "margin-desktop": "1.5rem", "gutter": "1rem", "sidebar-width": "16rem" }, "fontFamily": { "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "label-xs": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "data-mono-md": ["JetBrains Mono"], "display-lg-mobile": ["Plus Jakarta Sans"], "data-mono-sm": ["JetBrains Mono"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "data-mono-lg": ["JetBrains Mono"], "body-md": ["Inter"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-xs": ["11px", { "lineHeight": "14px", "letterSpacing": "0.025em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "data-mono-md": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "display-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "data-mono-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "500" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "data-mono-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-sidebar-width bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col min-h-0"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest shrink-0"><div class="flex items-center gap-space-sm"><img alt="SalesChamp Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSwU-NiBJI4Up8gjfoW-j6QoveSYANhhNrBqThs9xxtSWzg-_N67aIq2MbE_7k2rFWRNEDX71pBKjA_Kt5VLlwYUkscKIgVos6gczKSdcjYf6j2qkLT_kKIk0ZxyHzQWunfgAQhPt7AoD8lntvGEtfNLyaMPppa2KCLu9g-FA_4lVeOuqn0qbbu00sTLL-nGAIALHnVLTpWW54zoLVEI61TKEri3Cnv6_wklckzDorE7zwBN2cegpy"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">SalesChamp</span></div><span class="font-label-xs text-label-xs bg-surface-container-high text-on-surface-variant px-space-xs py-space-2xs rounded">ENT</span></div><div class="px-space-md py-space-sm shrink-0"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors"><div class="flex items-center gap-space-sm min-w-0"><div class="w-6 h-6 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-headline-sm text-headline-sm flex-shrink-0">A</div><div class="truncate"><p class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider">Workspace</p><p class="font-body-sm text-body-sm text-on-surface font-medium truncate">Acme Corp Enterprise EMEA</p></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div></div><div class="px-space-md pb-space-sm shrink-0"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span></span><span class="font-label-xs text-label-xs">Live Agent Fleet</span></div><span class="font-data-mono-sm text-data-mono-sm text-on-surface font-semibold">8 active</span></div></div><div class="px-space-md pb-space-sm shrink-0"><button class="w-full flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px]">search</span><span class="font-body-sm text-body-sm">Quick actions</span></div><kbd class="font-data-mono-sm text-data-mono-sm px-space-xs py-space-2xs bg-surface-container-highest rounded text-on-surface-variant">⌘K</kbd></button></div><nav class="px-space-sm space-y-space-2xs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dashboard" href="#">Dashboard</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="workflow-studio" href="#">Workflow Studio</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="lead-dossier-hub" href="#">Lead &amp; Dossier Hub</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="proposal-studio" href="#">Proposal Studio</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="voice-outreach" href="#">Voice &amp; Outreach</a><a aria-current="page" class="flex items-center px-space-sm py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="crm-interoperability" href="#">CRM Interoperability</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="sap-erp-operations" href="#">SAP ERP Operations</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="admin-governance" href="#">Admin &amp; Governance</a></nav></div><div class="p-space-md bg-surface-container-lowest shrink-0"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="min-w-0"><p class="font-body-sm text-body-sm text-on-surface font-medium truncate">E. Vance</p><p class="font-data-mono-sm text-data-mono-sm text-on-surface-variant truncate">RevOps Dir.</p></div></div><a class="text-on-surface-variant hover:text-on-surface" data-path="logout" href="#"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></aside><div class="pl-sidebar-width"><header class="fixed top-0 left-sidebar-width right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><img alt="SalesChamp Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSwU-NiBJI4Up8gjfoW-j6QoveSYANhhNrBqThs9xxtSWzg-_N67aIq2MbE_7k2rFWRNEDX71pBKjA_Kt5VLlwYUkscKIgVos6gczKSdcjYf6j2qkLT_kKIk0ZxyHzQWunfgAQhPt7AoD8lntvGEtfNLyaMPppa2KCLu9g-FA_4lVeOuqn0qbbu00sTLL-nGAIALHnVLTpWW54zoLVEI61TKEri3Cnv6_wklckzDorE7zwBN2cegpy"/><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">SalesChamp</span><div class="hidden lg:flex items-center gap-space-xs font-label-xs text-label-xs bg-surface-container-low px-space-sm py-space-xs rounded-full text-on-surface-variant"><span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span>Salesforce Connected</span></div><div class="hidden xl:flex items-center gap-space-xs font-label-xs text-label-xs bg-surface-container-low px-space-sm py-space-xs rounded-full text-on-surface-variant"><span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span>Dynamics 365 Connected</span></div><div class="hidden 2xl:flex items-center gap-space-xs font-label-xs text-label-xs bg-surface-container-low px-space-sm py-space-xs rounded-full text-on-surface-variant"><span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span>SAP S/4HANA Active</span></div></div><div class="flex items-center gap-space-md"><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full px-space-xl py-space-xl bg-background"><div class="flex flex-col w-full space-y-space-xl">
+<!-- Header & Connection Ribbon -->
+<div class="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-space-base pb-space-xs">
+<div class="space-y-space-2xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-data-mono-sm text-data-mono-sm uppercase tracking-wider text-primary font-semibold">Integrations • Bi-Directional CDC</span>
+<span class="font-label-xs text-label-xs bg-surface-container-high text-on-surface-variant px-space-xs py-space-2xs rounded font-medium">Cluster v4.8</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Dual CRM Interoperability &amp; Deduplication Engine</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">Autonomous schema transformation, delta-event streaming, and deterministic deduplication reconciling Salesforce Enterprise &amp; Microsoft Dynamics 365 in real time.</p>
+</div>
+<!-- Active Connection Nodes -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-sm px-space-md py-space-sm bg-surface-container-lowest rounded-xl shadow-sm border border-[#E2E8F0]">
+<div class="w-7 h-7 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant font-bold text-xs">SF</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+</span>
+<span class="font-label-xs text-label-xs text-on-surface font-semibold">Salesforce REST v59.0</span>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Connected • 140ms latency</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm px-space-md py-space-sm bg-surface-container-lowest rounded-xl shadow-sm border border-[#E2E8F0]">
+<div class="w-7 h-7 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-bold text-xs">D365</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+</span>
+<span class="font-label-xs text-label-xs text-on-surface font-semibold">MS Dynamics 365 v9.2</span>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Connected • 210ms latency</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Top Metric Ribbon (4 compact stats) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-base">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-[#E2E8F0] relative overflow-hidden flex flex-col justify-between space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-on-surface-variant font-semibold">Sync Latency</span>
+<span class="p-1 rounded bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">1.2s</span>
+<span class="font-data-mono-sm text-data-mono-sm text-emerald-600 font-semibold">-0.4s vs avg</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-1">Real-time CDC webhook streaming</p>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 86%;"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-[#E2E8F0] relative overflow-hidden flex flex-col justify-between space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-on-surface-variant font-semibold">Deduplicated Contacts</span>
+<span class="p-1 rounded bg-surface-container-low text-secondary">
+<span class="material-symbols-outlined text-[18px]">call_merge</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">1,842</span>
+<span class="font-data-mono-sm text-data-mono-sm text-secondary font-semibold">+14 today</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-1">Merged records without data loss</p>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 94%;"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-[#E2E8F0] relative overflow-hidden flex flex-col justify-between space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-on-surface-variant font-semibold">Bi-directional Conflict Rate</span>
+<span class="p-1 rounded bg-emerald-50 text-emerald-700">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">0.18%</span>
+<span class="font-data-mono-sm text-data-mono-sm text-emerald-600 font-semibold">Below 0.20% SLA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-1">Strict ACID reconciliation state</p>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full overflow-hidden">
+<div class="bg-emerald-500 h-full rounded-full" style="width: 28%;"></div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-[#E2E8F0] relative overflow-hidden flex flex-col justify-between space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-on-surface-variant font-semibold">Auto-Resolved Conflicts</span>
+<span class="p-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">328</span>
+<span class="font-data-mono-sm text-data-mono-sm text-tertiary font-semibold">100% autonomous</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-1">Handled by RevOps Agent today</p>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 98%;"></div>
+</div>
+</div>
+</div>
+<!-- Main Tri-Pane Live Canvas: SF (40%) | Schema Bridge & Conflict Hub (20%) | Dynamics (40%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-base items-stretch">
+<!-- LEFT PANE: Salesforce Enterprise Instance (5 cols / ~41%) -->
+<div class="lg:col-span-5 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm border border-[#E2E8F0] overflow-hidden">
+<!-- Instance Header -->
+<div class="p-space-base bg-[#F8FAFC] border-b border-[#E2E8F0] flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-[#00A1E0] text-white flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">cloud</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-xs text-label-xs text-[#00A1E0] font-bold uppercase tracking-wider">Salesforce CRM</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant truncate">ID: 0015e00000X9yAa</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Acme Cloud Logistics</h3>
+</div>
+</div>
+<span class="font-label-xs text-label-xs bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-semibold border border-emerald-200 shrink-0">Master Record</span>
+</div>
+<!-- Opportunity Fields Container -->
+<div class="p-space-base space-y-space-md border-b border-[#F1F5F9]">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold">Opportunity Details</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">sObject: Opportunity</span>
+</div>
+<div class="space-y-space-sm bg-surface-container-low/50 p-space-sm rounded-lg">
+<div class="flex justify-between items-start text-sm">
+<span class="text-on-surface-variant font-medium">Deal Name</span>
+<span class="text-on-surface font-semibold text-right">Autonomous ERP Orchestration Pod</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Sales Stage</span>
+<span class="font-label-xs text-label-xs bg-primary-fixed text-on-primary-fixed-variant px-space-sm py-0.5 rounded-full font-semibold">Negotiation / Review</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Annual Value (ARR)</span>
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-bold text-primary-container">$164,000 ARR</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Target Close Date</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface font-medium">2025-10-28 (ISO 8601)</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Assigned Rep &amp; Agent</span>
+<span class="text-on-surface font-medium text-xs flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+              Marcus Vance / AI David
+            </span>
+</div>
+</div>
+<!-- Contact Roles in Salesforce -->
+<div class="space-y-space-xs pt-1">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold">Associated Contact Roles</span>
+<div class="space-y-1.5">
+<div class="p-space-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold text-xs">MV</div>
+<div class="truncate">
+<p class="text-xs font-semibold text-on-surface truncate">Marcus Vance</p>
+<p class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">+1 (312) 849-2910</p>
+</div>
+</div>
+<span class="font-label-xs text-label-xs bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant">VP Supply Chain</span>
+</div>
+<div class="p-space-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-xs">ER</div>
+<div class="truncate">
+<p class="text-xs font-semibold text-on-surface truncate">Elena Rostova</p>
+<p class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">+1 (312) 849-3304</p>
+</div>
+</div>
+<span class="font-label-xs text-label-xs bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant">CTO</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Activity Timeline (SFCDC Stream) -->
+<div class="p-space-base flex-1 flex flex-col justify-between bg-surface-container-lowest">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold">Recent SF CDC Events</span>
+<span class="font-data-mono-sm text-data-mono-sm text-emerald-600 font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Live Stream
+            </span>
+</div>
+<div class="space-y-2 relative before:absolute before:inset-0 before:left-3 before:w-0.5 before:bg-[#E2E8F0] ml-1">
+<div class="relative flex items-start gap-3 pl-6 text-xs">
+<span class="absolute left-1.5 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-white"></span>
+<div class="flex-1 min-w-0">
+<p class="font-medium text-on-surface truncate">Autonomous Voice Outreach call completed</p>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">14m ago • Logged to Task/CallDisposition</span>
+</div>
+</div>
+<div class="relative flex items-start gap-3 pl-6 text-xs">
+<span class="absolute left-1.5 top-1 w-3 h-3 rounded-full bg-secondary ring-4 ring-white"></span>
+<div class="flex-1 min-w-0">
+<p class="font-medium text-on-surface truncate">S/4HANA Order Quote generated &amp; attached</p>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">22m ago • SAP Sync Ref: 9004218</span>
+</div>
+</div>
+<div class="relative flex items-start gap-3 pl-6 text-xs">
+<span class="absolute left-1.5 top-1 w-3 h-3 rounded-full bg-on-surface-variant ring-4 ring-white"></span>
+<div class="flex-1 min-w-0">
+<p class="font-medium text-on-surface truncate">SendGrid follow-up dispatched to Elena Rostova</p>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">48m ago • Opened (tracking click)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-[#F1F5F9] flex items-center justify-between text-xs text-on-surface-variant">
+<span>CDC Subscriber: <span class="font-data-mono-sm text-data-mono-sm font-semibold text-on-surface">Apex CometD-2.8</span></span>
+<span class="font-data-mono-sm text-data-mono-sm">Queue: 0 pending</span>
+</div>
+</div>
+</div>
+<!-- CENTER PANE: Conflict Resolver & Schema Bridge (2 cols / ~18%) -->
+<div class="lg:col-span-2 flex flex-col space-y-space-base justify-between">
+<!-- Bridge Rules Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-base shadow-sm border border-[#E2E8F0] space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-primary font-bold">Schema Bridge</span>
+<span class="material-symbols-outlined text-primary text-[18px]">sync_alt</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Deterministic field transformations applied on ingress.</p>
+<!-- Mapping visual items -->
+<div class="space-y-2 pt-1">
+<!-- Field 1: Name -->
+<div class="p-2 rounded bg-[#F8FAFC] border border-[#E2E8F0] text-center">
+<div class="flex items-center justify-between text-xs">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant truncate">Account.Name</span>
+<span class="material-symbols-outlined text-emerald-600 text-[14px]">swap_horiz</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant truncate">account.name</span>
+</div>
+<div class="flex items-center justify-center gap-1 mt-1 text-emerald-700">
+<span class="material-symbols-outlined text-[12px]">check_circle</span>
+<span class="font-label-xs text-label-xs font-semibold">100% Match</span>
+</div>
+</div>
+<!-- Field 2: Amount -->
+<div class="p-2 rounded bg-[#F8FAFC] border border-[#E2E8F0] text-center">
+<div class="flex items-center justify-between text-xs">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant truncate">Amount</span>
+<span class="material-symbols-outlined text-emerald-600 text-[14px]">swap_horiz</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant truncate">estimatedval</span>
+</div>
+<div class="flex items-center justify-center gap-1 mt-1 text-emerald-700">
+<span class="material-symbols-outlined text-[12px]">check_circle</span>
+<span class="font-label-xs text-label-xs font-semibold">$164k Reconciled</span>
+</div>
+</div>
+<!-- Field 3: Phone (Conflict) -->
+<div class="p-2.5 rounded-lg bg-amber-50/80 border border-amber-300 text-center shadow-sm">
+<div class="flex items-center justify-between text-xs">
+<span class="font-data-mono-sm text-data-mono-sm text-amber-900 font-bold truncate">Phone</span>
+<span class="material-symbols-outlined text-amber-700 text-[14px]">error</span>
+<span class="font-data-mono-sm text-data-mono-sm text-amber-900 font-bold truncate">telephone1</span>
+</div>
+<div class="mt-1.5">
+<span class="font-label-xs text-label-xs bg-amber-200/60 text-amber-900 px-1.5 py-0.5 rounded font-bold">Delta Detected</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Conflict Resolution Action Card -->
+<div class="bg-gradient-to-br from-amber-50 to-orange-50/40 rounded-xl p-space-base border border-amber-200 shadow-sm flex flex-col justify-between space-y-space-sm">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-amber-800 text-[18px]">warning</span>
+<span class="font-label-xs text-label-xs uppercase font-bold text-amber-900 tracking-wider">Conflict Resolver</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Phone &amp; Title Mismatch</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            D365 holds older desk line <code class="font-data-mono-sm text-data-mono-sm bg-amber-100 px-1 py-0.5 rounded">0199</code>; SF holds direct mobile <code class="font-data-mono-sm text-data-mono-sm bg-amber-100 px-1 py-0.5 rounded">2910</code>.
+          </p>
+</div>
+<div class="p-2 rounded bg-white/80 border border-amber-200">
+<div class="flex justify-between items-center text-xs">
+<span class="font-semibold text-on-surface">Agent Confidence:</span>
+<span class="font-data-mono-sm text-data-mono-sm font-bold text-tertiary">99.4%</span>
+</div>
+<p class="font-label-xs text-label-xs text-on-surface-variant mt-0.5">Verified during live inbound call by Voice Agent David.</p>
+</div>
+<button class="w-full py-2 px-space-sm bg-primary-container hover:bg-primary text-white rounded-lg font-body-sm text-body-sm font-semibold transition-all shadow-sm flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Apply SF → D365 Sync</span>
+</button>
+</div>
+<!-- Transformation Rules Legend -->
+<div class="bg-surface-container-lowest rounded-xl p-space-base border border-[#E2E8F0] space-y-2">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-on-surface-variant font-semibold">Transform Normalizer</span>
+<div class="flex flex-col gap-1.5 text-xs text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Date Standard:</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface font-medium">ISO-8601 UTC</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Currency Code:</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface font-medium">USD ($)</span>
+</div>
+<div class="flex items-center justify-between">
+<span>State Province:</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface font-medium">US-IL Formatter</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT PANE: Microsoft Dynamics 365 Sales Instance (5 cols / ~41%) -->
+<div class="lg:col-span-5 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm border border-[#E2E8F0] overflow-hidden">
+<!-- Instance Header -->
+<div class="p-space-base bg-[#F8FAFC] border-b border-[#E2E8F0] flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-[#002050] text-white flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">dataset</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-xs text-label-xs text-[#002050] font-bold uppercase tracking-wider">Dynamics 365 Sales</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant truncate">GUID: {8f23c912-d365}</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Acme Cloud Logistics Inc</h3>
+</div>
+</div>
+<span class="font-label-xs text-label-xs bg-secondary-fixed text-on-secondary-fixed-variant px-2 py-0.5 rounded-full font-semibold shrink-0">Secondary Ingest</span>
+</div>
+<!-- Dynamics Core Account Fields -->
+<div class="p-space-base space-y-space-md border-b border-[#F1F5F9]">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold">Entity Attributes</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Schema: Microsoft.CRM.Account</span>
+</div>
+<div class="space-y-space-sm bg-surface-container-low/50 p-space-sm rounded-lg">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Annual Revenue</span>
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-bold">$450,000,000 USD</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Industry Classification</span>
+<span class="text-on-surface font-semibold">Supply Chain Logistics &amp; Air Freight</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Relationship Health</span>
+<div class="flex items-center gap-2">
+<div class="w-16 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-emerald-500 h-full rounded-full" style="width: 92%;"></div>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-emerald-700 font-bold">92 / 100</span>
+</div>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Telephone (Main)</span>
+<span class="font-data-mono-sm text-data-mono-sm text-amber-700 bg-amber-100/70 px-1.5 py-0.5 rounded font-bold">+1 (312) 555-0199</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Sales Insights AI Score</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">trending_up</span>
+<span class="font-data-mono-md text-data-mono-md text-tertiary font-bold">88% Win Probability</span>
+</div>
+</div>
+</div>
+<!-- Microsoft Dynamics Copilot Widget -->
+<div class="p-space-base rounded-xl bg-gradient-to-r from-tertiary-fixed/40 via-surface-container-low to-secondary-fixed/30 border border-tertiary-fixed-dim space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">auto_awesome</span>
+<span class="font-label-xs text-label-xs uppercase font-bold text-tertiary tracking-wider">Dynamics Copilot Suggestion</span>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Model: GPT-4o Enterprise</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+            “Copilot suggests consolidating duplicate billing address with Hamburg distribution center detected in SAP ERP BAPI <span class="font-data-mono-sm text-data-mono-sm font-semibold">DE-HAM-901</span> to prevent billing dispatch failures.”
+          </p>
+<div class="flex items-center gap-2 pt-1">
+<button class="px-2.5 py-1 bg-surface-container-lowest hover:bg-surface-container text-tertiary font-body-sm text-body-sm font-semibold rounded-lg shadow-sm border border-tertiary-fixed-dim transition-colors">
+              Accept Consolidation
+            </button>
+<button class="px-2.5 py-1 text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm">
+              Dismiss
+            </button>
+</div>
+</div>
+</div>
+<!-- D365 Sync Engine Diagnostic Table -->
+<div class="p-space-base flex-1 flex flex-col justify-between bg-surface-container-lowest">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold">OData / Dataverse Entity Status</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Batch Payload: 12.4 KB</span>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center justify-between p-2 rounded bg-[#F8FAFC] border border-[#E2E8F0] text-xs">
+<span class="font-data-mono-sm text-data-mono-sm font-semibold text-on-surface">contacts(elena.rostova)</span>
+<span class="font-label-xs text-label-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">Reconciled</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#F8FAFC] border border-[#E2E8F0] text-xs">
+<span class="font-data-mono-sm text-data-mono-sm font-semibold text-on-surface">opportunities(erp-pod-2025)</span>
+<span class="font-label-xs text-label-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">Reconciled</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#F8FAFC] border border-[#E2E8F0] text-xs">
+<span class="font-data-mono-sm text-data-mono-sm font-semibold text-amber-900">contacts(marcus.vance)</span>
+<span class="font-label-xs text-label-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-bold">Needs Merge</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-[#F1F5F9] flex items-center justify-between text-xs text-on-surface-variant">
+<span>Target Web API: <span class="font-data-mono-sm text-data-mono-sm font-semibold text-on-surface">api/data/v9.2</span></span>
+<span class="text-emerald-700 font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> 200 OK Handshake
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Padded Execution Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-base shadow-sm border border-[#E2E8F0] flex flex-col md:flex-row items-center justify-between gap-space-base">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-emerald-500 relative flex items-center justify-center">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Last full bi-directional sync: 42 seconds ago</span>
+<span class="text-on-surface-variant">•</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">CDC Event Stream Active (0 backpressure)</span>
+</div>
+</div>
+<!-- Quick Actions -->
+<div class="flex flex-wrap items-center gap-space-sm w-full md:w-auto justify-end">
+<button class="px-space-md py-2 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg font-body-sm text-body-sm font-medium border border-[#CBD5E1] transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">download</span>
+<span>Export Audit Trail (CSV/JSON)</span>
+</button>
+<button class="px-space-md py-2 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg font-body-sm text-body-sm font-medium border border-[#CBD5E1] transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">refresh</span>
+<span>Re-index Deduplication Engine</span>
+</button>
+<button class="px-space-lg py-2 bg-primary-container hover:bg-primary text-white rounded-lg font-body-sm text-body-sm font-semibold transition-all shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Run Manual Bi-directional Sync (Force Re-scan)</span>
+</button>
+</div>
+</div>
+</div></main></div></body></html>

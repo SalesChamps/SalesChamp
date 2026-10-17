@@ -1,0 +1,474 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#283044", "on-secondary-fixed-variant": "#004c6e", "on-surface": "#131b2e", "surface-dim": "#d2d9f4", "on-tertiary-fixed-variant": "#5516be", "surface-bright": "#faf8ff", "on-primary-container": "#dad7ff", "tertiary-container": "#6f3dd9", "surface-container-lowest": "#ffffff", "secondary-container": "#39b8fd", "secondary": "#006591", "on-surface-variant": "#464555", "on-secondary-container": "#004666", "on-error": "#ffffff", "inverse-on-surface": "#eef0ff", "surface": "#faf8ff", "primary-container": "#4f46e5", "on-tertiary-fixed": "#23005c", "outline": "#777587", "inverse-primary": "#c3c0ff", "background": "#faf8ff", "tertiary-fixed": "#e9ddff", "primary-fixed": "#e2dfff", "surface-container-highest": "#dae2fd", "on-background": "#131b2e", "surface-container-high": "#e2e7ff", "primary": "#3525cd", "outline-variant": "#c7c4d8", "on-tertiary": "#ffffff", "error": "#ba1a1a", "on-primary": "#ffffff", "surface-tint": "#4d44e3", "tertiary-fixed-dim": "#d0bcff", "surface-variant": "#dae2fd", "on-primary-fixed": "#0f0069", "on-error-container": "#93000a", "primary-fixed-dim": "#c3c0ff", "secondary-fixed-dim": "#89ceff", "secondary-fixed": "#c9e6ff", "surface-container-low": "#f2f3ff", "on-tertiary-container": "#e3d5ff", "surface-container": "#eaedff", "on-secondary": "#ffffff", "on-secondary-fixed": "#001e2f", "on-primary-fixed-variant": "#3323cc", "tertiary": "#571ac0", "error-container": "#ffdad6" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "1.5rem", "space-base": "1rem", "sidebar-width": "16rem", "space-2xs": "0.125rem", "space-md": "0.75rem", "space-sm": "0.5rem", "space-lg": "1.25rem", "margin-mobile": "1rem", "gutter": "1rem", "space-2xl": "2rem", "space-3xl": "2.5rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-4xl": "3rem", "nav-rail-width": "4.5rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "data-mono-lg": ["JetBrains Mono"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "data-mono-sm": ["JetBrains Mono"], "label-xs": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "data-mono-md": ["JetBrains Mono"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "body-md": ["Inter"] }, "fontSize": { "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "data-mono-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "display-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "data-mono-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "500" }], "label-xs": ["11px", { "lineHeight": "14px", "letterSpacing": "0.025em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "data-mono-md": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-sidebar-width bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><img alt="SalesChamp Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSwU-NiBJI4Up8gjfoW-j6QoveSYANhhNrBqThs9xxtSWzg-_N67aIq2MbE_7k2rFWRNEDX71pBKjA_Kt5VLlwYUkscKIgVos6gczKSdcjYf6j2qkLT_kKIk0ZxyHzQWunfgAQhPt7AoD8lntvGEtfNLyaMPppa2KCLu9g-FA_4lVeOuqn0qbbu00sTLL-nGAIALHnVLTpWW54zoLVEI61TKEri3Cnv6_wklckzDorE7zwBN2cegpy"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">SalesChamp</span></div><span class="font-label-xs text-label-xs bg-surface-container-high text-on-surface-variant px-space-xs py-space-2xs rounded">ENT</span></div><div class="px-space-md py-space-xs"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors"><div class="flex items-center gap-space-sm min-w-0"><div class="w-6 h-6 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-headline-sm text-headline-sm flex-shrink-0">A</div><div class="truncate"><p class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider">Workspace</p><p class="font-body-sm text-body-sm text-on-surface font-medium truncate">Acme Corp Enterprise EMEA</p></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div></div><div class="px-space-md pb-space-xs"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span></span><span class="font-label-xs text-label-xs">Live Agent Fleet</span></div><span class="font-data-mono-sm text-data-mono-sm text-on-surface font-semibold">8 active</span></div></div><div class="px-space-md pb-space-sm"><button class="w-full flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px]">search</span><span class="font-body-sm text-body-sm">Quick actions</span></div><kbd class="font-data-mono-sm text-data-mono-sm px-space-xs py-space-2xs bg-surface-container-highest rounded text-on-surface-variant">⌘K</kbd></button></div><nav class="px-space-sm space-y-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dashboard" href="#">Dashboard</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="workflow-studio" href="#">Workflow Studio</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="lead-dossier-hub" href="#">Lead &amp; Dossier Hub</a><a aria-current="page" class="flex items-center px-space-sm py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="proposal-studio" href="#">Proposal Studio</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="voice-outreach" href="#">Voice &amp; Outreach</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="crm-interoperability" href="#">CRM Interoperability</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="sap-erp-operations" href="#">SAP ERP Operations</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="admin-governance" href="#">Admin &amp; Governance</a></nav></div><div class="p-space-md bg-surface-container-lowest"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="min-w-0"><p class="font-body-sm text-body-sm text-on-surface font-medium truncate">E. Vance</p><p class="font-data-mono-sm text-data-mono-sm text-on-surface-variant truncate">RevOps Dir.</p></div></div><a class="text-on-surface-variant hover:text-on-surface" data-path="logout" href="#"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></aside><div class="pl-sidebar-width"><header class="fixed top-0 left-sidebar-width right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><img alt="SalesChamp Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSwU-NiBJI4Up8gjfoW-j6QoveSYANhhNrBqThs9xxtSWzg-_N67aIq2MbE_7k2rFWRNEDX71pBKjA_Kt5VLlwYUkscKIgVos6gczKSdcjYf6j2qkLT_kKIk0ZxyHzQWunfgAQhPt7AoD8lntvGEtfNLyaMPppa2KCLu9g-FA_4lVeOuqn0qbbu00sTLL-nGAIALHnVLTpWW54zoLVEI61TKEri3Cnv6_wklckzDorE7zwBN2cegpy"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">SalesChamp</span><div class="hidden lg:flex items-center gap-space-xs font-label-xs text-label-xs bg-surface-container-low px-space-sm py-space-xs rounded-full text-on-surface-variant"><span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span class="">Salesforce Connected</span></div><div class="hidden xl:flex items-center gap-space-xs font-label-xs text-label-xs bg-surface-container-low px-space-sm py-space-xs rounded-full text-on-surface-variant"><span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span class="">Dynamics 365 Connected</span></div><div class="hidden 2xl:flex items-center gap-space-xs font-label-xs text-label-xs bg-surface-container-low px-space-sm py-space-xs rounded-full text-on-surface-variant"><span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span class="">SAP S/4HANA Connected</span></div></div><div class="flex items-center gap-space-md"><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full px-space-xl py-space-xl bg-background"><div class="flex flex-col w-full">
+<!-- Top Context Sub-Header Bar -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<!-- Breadcrumb Hierarchy -->
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant flex-wrap">
+<span class="hover:text-primary transition-colors cursor-pointer">Proposals</span>
+<span class="material-symbols-outlined text-outline-variant text-[16px]">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Acme Cloud Logistics</span>
+<span class="material-symbols-outlined text-outline-variant text-[16px]">chevron_right</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Autonomous Hybrid Cloud &amp; ERP Orchestration Proposal (v2.1)</span>
+</div>
+<!-- Quick Status & Metric Pill Badges -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-full">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span class="font-label-xs text-label-xs text-tertiary font-semibold uppercase tracking-wider">Draft Generated by Agent v3.2</span>
+<span class="text-outline-variant text-label-xs">|</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant font-medium">Pending RevOps Approval</span>
+</div>
+<div class="flex items-center gap-space-md bg-surface-container-high text-on-surface px-space-md py-space-xs rounded-full">
+<div class="flex items-center gap-space-2xs">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">Est. ACV:</span>
+<span class="font-data-mono-sm text-data-mono-sm font-semibold text-primary">$240,000</span>
+</div>
+<span class="w-1 h-3 bg-outline-variant rounded-full"></span>
+<div class="flex items-center gap-space-2xs">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">Gross Margin:</span>
+<span class="font-data-mono-sm text-data-mono-sm font-semibold text-secondary">74.2%</span>
+</div>
+<span class="w-1 h-3 bg-outline-variant rounded-full"></span>
+<div class="flex items-center gap-space-2xs">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">Target Close:</span>
+<span class="font-data-mono-sm text-data-mono-sm font-semibold text-on-surface">Oct 28</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Asymmetric Workspace Layout -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANEL: 35% Width (xl:col-span-4) - AI Generation Settings, Sources & Policy Diagnostics -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Template & Orchestration Module -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Agent Generation Engine</h2>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-tertiary bg-tertiary-fixed px-space-xs py-space-2xs rounded font-semibold">Model: v3.2-r1</span>
+</div>
+<!-- Target Template Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider">Target Proposal Template</label>
+<div class="relative">
+<select class="w-full h-10 px-space-md pr-10 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface cursor-pointer appearance-none focus:bg-surface-container-lowest transition-colors">
+<option selected="">Enterprise ERP &amp; Multi-Cloud Migration v4.0</option>
+<option>Autonomous SDR &amp; Real-Time Voice Engine</option>
+<option>Legacy SAP Modernization Addendum</option>
+<option>Global Wholesale Supply Logistics Standard</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-2.5 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- RAG Context Grounding Sources -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider">Indexed Grounding Sources</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-semibold">154 KB Active Context</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Source 1 -->
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 rounded bg-surface accent-primary cursor-pointer" type="checkbox">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Internal Product Catalog (SKU-2025)</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">SaaS, Tiered Voice, Telephony specs</span>
+</div>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-secondary bg-secondary-fixed px-space-xs py-space-2xs rounded">48 kb</span>
+</label>
+<!-- Source 2 -->
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 rounded bg-surface accent-primary cursor-pointer" type="checkbox">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Pricing Book &amp; Discount Policy v8</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">VP approval thresholds &amp; caps</span>
+</div>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-secondary bg-secondary-fixed px-space-xs py-space-2xs rounded">12 kb</span>
+</label>
+<!-- Source 3 -->
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 rounded bg-surface accent-primary cursor-pointer" type="checkbox">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Freight &amp; Logistics Case Studies</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">DHL, FedEx EMEA benchmarks</span>
+</div>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-secondary bg-secondary-fixed px-space-xs py-space-2xs rounded">94 kb</span>
+</label>
+<!-- Source 4 (Optional unchecked) -->
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container opacity-60 transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 rounded bg-surface accent-primary cursor-pointer" type="checkbox">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Custom SLA Addendum</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">99.99% multi-region guarantee</span>
+</div>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Optional</span>
+</label>
+</div>
+</div>
+<!-- Personalization Intensity Slider -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider">Personalization Intensity</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-bold">85% (High Nuance)</span>
+</div>
+<input class="w-full accent-primary cursor-pointer h-2 bg-surface-container-highest rounded-lg" max="100" min="0" type="range" value="85">
+<p class="font-label-xs text-label-xs text-on-surface-variant mt-space-2xs">Injected Acme 10-K SEC Filings, Dallas fulfillment press announcements &amp; ERP migration public tender.</p>
+</div>
+<!-- Tone of Voice Switcher -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider">Tone of Voice Directive</span>
+<div class="grid grid-cols-3 gap-space-2xs bg-surface-container-high p-space-2xs rounded-lg text-center">
+<button class="py-space-xs px-space-2xs rounded-md bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold shadow-sm transition-all">Executive &amp; Auth.</button>
+<button class="py-space-xs px-space-2xs rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all">Consultative</button>
+<button class="py-space-xs px-space-2xs rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all">Bold &amp; Direct</button>
+</div>
+</div>
+<!-- Guardrails & Compliance Badges -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider">Policy Engine &amp; Guardrails</span>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Strict Grounding Score</span>
+<span class="font-data-mono-sm text-data-mono-sm text-secondary bg-secondary-fixed px-space-2xs rounded font-bold">98.6%</span>
+</div>
+<p class="font-label-xs text-label-xs text-on-surface-variant mt-0.5">Semantic vector alignment validates all technical claims match verified enterprise knowledge.</p>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-error-container text-on-error-container flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">warning</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-error-container">Discount Threshold Flag: 18%</span>
+<span class="font-data-mono-sm text-data-mono-sm bg-surface-container-lowest text-error px-space-2xs rounded font-bold">VP Exception</span>
+</div>
+<p class="font-label-xs text-label-xs opacity-90 mt-0.5">Standard maximum discount policy is 15%. Human RevOps sign-off triggers automatic VP notification.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Pipeline Impact Metric Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Account Revenue Projection</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">trending_up</span>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<div class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">$420k</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Estimated 24-month LTV expansion</div>
+</div>
+<div class="text-right">
+<span class="font-data-mono-sm text-data-mono-sm text-secondary font-bold">+18.4%</span>
+<p class="font-label-xs text-label-xs text-on-surface-variant">vs Acme fleet baseline</p>
+</div>
+</div>
+<!-- Inline SVG Mini Revenue Bar Chart -->
+<div class="w-full h-16 pt-space-xs flex items-end justify-between gap-1.5">
+<div class="w-full bg-surface-container-high rounded-t h-[35%] hover:bg-primary transition-all"></div>
+<div class="w-full bg-surface-container-high rounded-t h-[48%] hover:bg-primary transition-all"></div>
+<div class="w-full bg-surface-container-high rounded-t h-[40%] hover:bg-primary transition-all"></div>
+<div class="w-full bg-surface-container-high rounded-t h-[65%] hover:bg-primary transition-all"></div>
+<div class="w-full bg-surface-container-high rounded-t h-[75%] hover:bg-primary transition-all"></div>
+<div class="w-full bg-primary-container rounded-t h-[92%] relative group">
+<div class="opacity-0 group-hover:opacity-100 transition-opacity absolute -top-6 left-1/2 -translate-x-1/2 font-data-mono-sm text-data-mono-sm bg-inverse-surface text-inverse-on-surface px-1 rounded">Q4</div>
+</div>
+<div class="w-full bg-primary rounded-t h-full"></div>
+</div>
+<div class="flex justify-between font-label-xs text-label-xs text-on-surface-variant">
+<span class="">Current Run</span>
+<span class="">Target Expansion (FY26)</span>
+</div>
+</div>
+</div>
+<!-- RIGHT / CENTER PANEL: 65% Width (xl:col-span-8) - Interactive Proposal Canvas & HITL Sign-off -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Interactive Proposal Document Viewer -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm flex flex-col overflow-hidden">
+<!-- Document Canvas Header / Metadata -->
+<div class="p-space-xl bg-surface-container-low flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">description</span>
+<span class="font-data-mono-sm text-data-mono-sm bg-surface-container px-space-xs py-space-2xs rounded text-on-surface font-semibold">DOC-ACME-2025-089</span>
+<span class="font-label-xs text-label-xs text-tertiary bg-tertiary-fixed px-space-xs py-space-2xs rounded font-medium">Ready for Human Validation</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-space-xs text-on-surface-variant hover:text-on-surface bg-surface-container rounded-md transition-colors" title="Export PDF preview">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</button>
+<button class="p-space-xs text-on-surface-variant hover:text-on-surface bg-surface-container rounded-md transition-colors" title="Version history">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+<button class="flex items-center gap-space-2xs px-space-sm py-space-xs text-primary font-label-md text-label-md bg-surface-container-lowest rounded-md shadow-sm">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span class="">Edit Canvas</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+              Executive Proposal: Autonomous Supply Chain Lead-to-Cash Automation
+            </h1>
+<div class="flex flex-wrap items-center gap-x-space-lg gap-y-space-2xs font-body-sm text-body-sm text-on-surface-variant">
+<div class=""><span class="font-medium text-on-surface">Client:</span> Acme Cloud Logistics (US Central)</div>
+<div class=""><span class="font-medium text-on-surface">Prepared for:</span> Marcus Vance, VP Supply Chain</div>
+<div class=""><span class="font-medium text-on-surface">Author:</span> SalesChamp Agent Fleet v3.2</div>
+</div>
+</div>
+</div>
+<!-- Proposal Body Canvas with AI Highlight Markers -->
+<div class="p-space-xl flex flex-col gap-space-xl">
+<!-- Section 1: Executive Summary with High Confidence AI Marker -->
+<div class="relative pl-space-lg">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary rounded-full"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">1.0 Executive Problem Statement</span>
+<span class="font-label-xs text-label-xs bg-primary-fixed text-on-primary-fixed px-space-xs py-space-2xs rounded-full font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+                  AI Generated - High Confidence (99.2%)
+                </span>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant">Grounding: 10-K &amp; Press Wire</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              With Acme Cloud Logistics expanding its 420,000 sq ft Dallas distribution center, freight throughput is slated to surge by 34% through Q2 FY26. However, manual dispatch reconciliations and cross-system data transfer between SAP S/4HANA and disparate logistics portals currently cause an average order turnaround latency of 4.2 hours per shipment. 
+            </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mt-space-sm">
+              SalesChamp proposes deploying a dedicated autonomous agent pod with ElevenLabs speech synthesis and bidirectional ERP sync to compress outbound freight booking confirmation to under 90 seconds while eliminating order sync drift.
+            </p>
+</div>
+<!-- Section 2: Technical Architecture with RAG Marker -->
+<div class="relative pl-space-lg">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container rounded-full"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">2.0 Multi-System Orchestration Architecture</span>
+<span class="font-label-xs text-label-xs bg-secondary-fixed text-on-secondary-fixed-variant px-space-xs py-space-2xs rounded-full font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hub</span>
+                  Edited by Agent with RAG Data
+                </span>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant">Grounding: SAP RFC Connector v4</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              The integrated architecture deploys sub-second change-data-capture (CDC) pipelines bridging Acme's SAP S/4HANA production ledger and Salesforce Revenue Cloud. Autonomous voice dispatch handles spot-rate negotiations with 120 carrier partners using conversational AI guardrails.
+            </p>
+<!-- Architectural visual schema -->
+<div class="mt-space-md grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs uppercase text-on-surface-variant">Tier 1: Voice &amp; Intake</span>
+<span class="material-symbols-outlined text-primary text-[18px]">record_voice_over</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">ElevenLabs Telephony</div>
+<div class="font-label-xs text-label-xs text-on-surface-variant">50,000 carrier booking minutes with sub-350ms latency response.</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs uppercase text-on-surface-variant">Tier 2: Orchestration</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">smart_toy</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">10x Autonomous Fleet</div>
+<div class="font-label-xs text-label-xs text-on-surface-variant">Continuous deterministic workflow execution and SLA tracking.</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs uppercase text-on-surface-variant">Tier 3: Core Ledger</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">sync_alt</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">SAP S/4HANA Sync</div>
+<div class="font-label-xs text-label-xs text-on-surface-variant">Bi-directional transactional synchronization with 99.999% consistency.</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Dynamic Scope & Pricing SKU Table -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">3.0 Commercial Investment &amp; Line-Item Scope</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">Billing Schedule: Annual Upfront Prepay</span>
+</div>
+<!-- SKU Table Container -->
+<div class="w-full overflow-x-auto rounded-lg bg-surface-container-low">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-xs text-label-xs uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Line Item &amp; SKU</th>
+<th class="py-space-sm px-space-md">Scope Specification</th>
+<th class="py-space-sm px-space-md text-right">Unit Price</th>
+<th class="py-space-sm px-space-md text-center">Qty</th>
+<th class="py-space-sm px-space-md text-right">Total</th>
+<th class="py-space-sm px-space-md text-right">Margin %</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-semibold text-on-surface">
+<div class="">SalesChamp Autonomous Agent Core</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">SKU-AGNT-1000</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+                      Enterprise fleet allocation (10 Active Dedicated Agents)
+                    </td>
+<td class="py-space-md px-space-md font-data-mono-sm text-data-mono-sm text-right">$12,000/mo</td>
+<td class="py-space-md px-space-md font-data-mono-sm text-data-mono-sm text-center">1 yr</td>
+<td class="py-space-md px-space-md font-data-mono-sm text-data-mono-sm text-right font-semibold">$120,000</td>
+<td class="py-space-md px-space-md text-right">
+<span class="font-data-mono-sm text-data-mono-sm text-secondary font-bold">78%</span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-semibold text-on-surface">
+<div class="">SAP &amp; Salesforce Sync Connector</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">SKU-INT-S4HANA</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+                      Real-time bidirectional event pipeline &amp; RFC bridge
+                    </td>
+<td class="py-space-md px-space-md font-data-mono-sm text-data-mono-sm text-right">$45,000</td>
+<td class="py-space-md px-space-md font-data-mono-sm text-data-mono-sm text-center">1 unit</td>
+<td class="py-space-md px-space-md font-data-mono-sm text-data-mono-sm text-right font-semibold">$45,000</td>
+<td class="py-space-md px-space-md text-right">
+<span class="font-data-mono-sm text-data-mono-sm text-secondary font-bold">82%</span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-semibold text-on-surface">
+<div class="">Omnichannel Voice Telephony Pack</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">SKU-VOX-50K</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+                      50,000 automated ElevenLabs synthesis calling minutes
+                    </td>
+<td class="py-space-md px-space-md font-data-mono-sm text-data-mono-sm text-right">$0.70/min</td>
+<td class="py-space-md px-space-md font-data-mono-sm text-data-mono-sm text-center">50,000</td>
+<td class="py-space-md px-space-md font-data-mono-sm text-data-mono-sm text-right font-semibold">$35,000</td>
+<td class="py-space-md px-space-md text-right">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant font-bold">62%</span>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Pricing Calculation Totals Bar -->
+<div class="p-space-md bg-surface-container-low flex flex-col items-end gap-space-2xs">
+<div class="flex items-center justify-between w-64 font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Gross Scope Subtotal:</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface font-semibold">$200,000</span>
+</div>
+<div class="flex items-center justify-between w-64 font-body-sm text-body-sm text-error">
+<span class="">Applied Enterprise Discount (18%):</span>
+<span class="font-data-mono-sm text-data-mono-sm font-semibold">-$36,000</span>
+</div>
+<div class="w-64 h-px bg-surface-container-highest my-space-2xs"></div>
+<div class="flex items-center justify-between w-64">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Final ACV:</span>
+<span class="font-data-mono-lg text-data-mono-lg font-bold text-primary">$164,000</span>
+</div>
+<div class="font-label-xs text-label-xs text-on-surface-variant">Net Blended Gross Margin: 74.2%</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Human Sign-Off Drawer & Diff-Checker Console -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between bg-surface-container-high px-space-md py-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">rule</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">HITL Executive Validation &amp; Revision Diff</span>
+</div>
+<span class="font-label-xs text-label-xs bg-surface-container-lowest text-on-surface-variant px-space-sm py-space-2xs rounded-full font-semibold">Revision ID: #REV-9021</span>
+</div>
+<!-- Diff View Comparison Block -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Left: Original AI Proposal -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold">Agent Initial Proposal</span>
+<span class="font-data-mono-sm text-data-mono-sm text-tertiary bg-tertiary-fixed px-space-xs py-space-2xs rounded">22% Discount</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-through opacity-75">
+              "Applied standard 22% aggressive ramp discount for multi-product expansion with 12-month standard net 30 payment."
+            </p>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Net ACV: $156,000 | Blended Margin: 69.8%</div>
+</div>
+<!-- Right: RevOps Human Correction -->
+<div class="p-space-md rounded-lg bg-surface-container-high flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs text-primary uppercase font-semibold">RevOps Human Adjustment</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary bg-primary-fixed px-space-xs py-space-2xs rounded font-bold">18% Discount + 2Y Lock</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">
+              Adjusted to 18% discount capped under condition of 2-year upfront prepayment lock and mutual Dallas pilot sign-off.
+            </p>
+<div class="font-data-mono-sm text-data-mono-sm text-secondary font-bold">Net ACV: $164,000 | Blended Margin: 74.2%</div>
+</div>
+</div>
+<!-- Review Notes Textarea -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider">Human Director Executive Sign-off Condition</label>
+<textarea class="w-full p-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:bg-surface-container-lowest transition-colors resize-none" rows="2">Approved under condition that Dallas distribution center deployment is milestone 1 and verified within 45 days of contract execution.</textarea>
+</div>
+<!-- Sticky Action Trigger Buttons -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-low text-error hover:bg-error-container hover:text-on-error-container rounded-lg font-label-md text-label-md font-semibold transition-colors">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span class="">Reject &amp; Re-prompt Agent</span>
+</button>
+<div class="flex items-center gap-space-md">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-high text-on-surface hover:bg-surface-container-highest rounded-lg font-label-md text-label-md font-semibold transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span class="">Edit Proposal Inline</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-xl py-space-sm bg-primary-container text-on-primary-container hover:bg-primary rounded-lg font-label-md text-label-md font-semibold shadow-md transition-all" id="approve-btn">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span class="">Approve &amp; Initiate Outreach</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for Human-In-The-Loop Approval Action
+  document.getElementById('approve-btn')?.addEventListener('click', function() {
+    const btn = this;
+    btn.disabled = true;
+    btn.innerHTML = `
+      <span class="material-symbols-outlined animate-spin text-[20px]">sync</span>
+      <span>Broadcasting to Salesforce & Outreach...</span>
+    `;
+    setTimeout(() => {
+      btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+      btn.classList.add('bg-secondary', 'text-on-secondary');
+      btn.innerHTML = `
+        <span class="material-symbols-outlined text-[20px]">check_circle</span>
+        <span>Approved & Outreach Dispatched</span>
+      `;
+    }, 1200);
+  });
+</script></main></div>
+
+</body></html>

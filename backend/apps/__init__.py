@@ -1,0 +1,1 @@
+"""SalesChamp Domain Applications"""
