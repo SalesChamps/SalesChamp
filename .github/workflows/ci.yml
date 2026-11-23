@@ -81,8 +81,10 @@ jobs:
     name: Sync commits and merged work to Jira
     needs: [backend, frontend]
     if: >-
-      (github.event_name == 'push' && github.ref != 'refs/heads/main') ||
-      (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true)
+      always() && (
+        (github.event_name == 'push' && github.ref != 'refs/heads/main') ||
+        (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && needs.backend.result == 'success' && needs.frontend.result == 'success')
+      )
     runs-on: ubuntu-latest
     steps:
       - name: Link commits and update Jira issue status
